@@ -1,3 +1,4 @@
+using AspNetCoreRateLimit;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using NLog;
@@ -50,9 +51,12 @@ builder.Services.AddScoped<IBookLinks, BookLinks>();
 builder.Services.ConfigureVersioning();
 builder.Services.ConfigureResponseCaching();
 builder.Services.ConfigureHttpCacheHeaders();
+builder.Services.AddMemoryCache();
+builder.Services.ConfigureRateLimitingOptions();
+builder.Services.AddHttpContextAccessor();
+
 
 //Register oluyor.
-
 var app = builder.Build();
 
 var logger = app.Services.GetRequiredService<ILoggerService>();
@@ -71,6 +75,7 @@ if (app.Environment.IsProduction())
 
 app.UseHttpsRedirection();
 
+app.UseIpRateLimiting();
 app.UseCors("CorsPolicy");
 // Microsoft best practice -> Cors'tan sonra Caching ifadesinin çaðrýlmasýný önerir.
 app.UseResponseCaching();
