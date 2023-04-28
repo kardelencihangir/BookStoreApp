@@ -55,6 +55,8 @@ builder.Services.AddMemoryCache();
 builder.Services.ConfigureRateLimitingOptions();
 builder.Services.AddHttpContextAccessor();
 
+builder.Services.AddAuthentication();
+builder.Services.ConfigureIdentity();
 
 //Register oluyor.
 var app = builder.Build();
@@ -81,6 +83,7 @@ app.UseCors("CorsPolicy");
 app.UseResponseCaching();
 app.UseHttpCacheHeaders();
 
+app.UseAuthentication(); //Önce Authentication, ardýndan Authorization yapýlýr.
 app.UseAuthorization();
 
 app.MapControllers();
