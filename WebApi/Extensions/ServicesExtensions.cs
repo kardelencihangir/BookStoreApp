@@ -151,9 +151,9 @@ namespace WebApi.Extensions
             var builder = services.AddIdentity<User, IdentityRole>(opts =>
             {
                 opts.Password.RequireDigit = true;
-                opts.Password.RequireLowercase = true;
-                opts.Password.RequireUppercase = true;
-                opts.Password.RequireNonAlphanumeric = true;
+                opts.Password.RequireLowercase = false;
+                opts.Password.RequireUppercase = false;
+                opts.Password.RequireNonAlphanumeric = false;
                 opts.Password.RequiredLength = 6;
 
                 opts.User.RequireUniqueEmail = true;
