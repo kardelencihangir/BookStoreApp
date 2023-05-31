@@ -346,3 +346,19 @@
 2023-05-31 18:09:18.6270 Info Message Template Auto Format enabled
 2023-05-31 18:09:18.7830 Info Adding target FileTarget(Name=logfile)
 2023-05-31 18:09:18.8119 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\karde\OneDrive\Masaüstü\Kardelen\Courses\ASP.NET Core Web API\bsStoreApp\WebApi\nlog.config
+2023-05-31 18:11:47.6140 Info Message Template Auto Format enabled
+2023-05-31 18:11:47.9087 Info Adding target FileTarget(Name=logfile)
+2023-05-31 18:11:47.9761 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\karde\OneDrive\Masaüstü\Kardelen\Courses\ASP.NET Core Web API\bsStoreApp\WebApi\nlog.config
+2023-05-31 18:14:19.2185 Info Message Template Auto Format enabled
+2023-05-31 18:14:19.4091 Info Adding target FileTarget(Name=logfile)
+2023-05-31 18:14:19.4559 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\karde\OneDrive\Masaüstü\Kardelen\Courses\ASP.NET Core Web API\bsStoreApp\WebApi\nlog.config
+2023-05-31 18:23:49.8504 Info Message Template Auto Format enabled
+2023-05-31 18:23:49.8950 Info Adding target FileTarget(Name=logfile)
+2023-05-31 18:23:49.9143 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\karde\OneDrive\Masaüstü\Kardelen\Courses\ASP.NET Core Web API\bsStoreApp\WebApi\nlog.config
+2023-05-31 18:23:51.0858 Info AppDomain Shutting down. LogFactory closing...
+2023-05-31 18:23:51.0951 Info LogFactory has been closed.
+2023-05-31 18:24:01.5118 Info Message Template Auto Format enabled
+2023-05-31 18:24:01.5546 Info Adding target FileTarget(Name=logfile)
+2023-05-31 18:24:01.5740 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\karde\OneDrive\Masaüstü\Kardelen\Courses\ASP.NET Core Web API\bsStoreApp\WebApi\nlog.config
+2023-05-31 18:24:02.7618 Info AppDomain Shutting down. LogFactory closing...
+2023-05-31 18:24:02.7714 Info LogFactory has been closed.
