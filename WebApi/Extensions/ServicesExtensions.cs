@@ -177,7 +177,7 @@ namespace WebApi.Extensions
                 opt.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
             }).AddJwtBearer(options =>
                 options.TokenValidationParameters = new TokenValidationParameters
-            {
+                {
                 ValidateIssuer = true,
                 ValidateAudience = true,
                 ValidateLifetime = true,
@@ -185,7 +185,7 @@ namespace WebApi.Extensions
                 ValidIssuer = jwtSettings["validIssuer"],
                 ValidAudience = jwtSettings["validAudience"],
                 IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey))
-            }
+                }
             );
         }
     }
