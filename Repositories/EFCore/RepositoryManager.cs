@@ -22,7 +22,8 @@ namespace Repositories.EFCore
 
         public IBookRepository Book => _bookRepository.Value;
 
-        public ICategoryRepository CategoryRepository => _categoryRepository.Value;
+        public ICategoryRepository Category => _categoryRepository.Value;
+
 
         // Bir class içerisinde başka bir class new'lememeliyiz, bağımlı olmaması için.
         // IoC ile çözebilirdik fakat şimdilik pratik olması için yaptık.
