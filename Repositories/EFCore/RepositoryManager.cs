@@ -9,6 +9,7 @@ namespace Repositories.EFCore
 {
     public class RepositoryManager : IRepositoryManager
     {
+
         private readonly RepositoryContext _context;
         private readonly IBookRepository _bookRepository;
         private readonly ICategoryRepository _categoryRepository;
@@ -26,12 +27,8 @@ namespace Repositories.EFCore
 
         public ICategoryRepository Category => _categoryRepository;
 
-
-        // Bir class içerisinde başka bir class new'lememeliyiz, bağımlı olmaması için.
-        // IoC ile çözebilirdik fakat şimdilik pratik olması için yaptık.
-
         public async Task SaveAsync()
-        {            
+        {
             await _context.SaveChangesAsync();
         }
     }

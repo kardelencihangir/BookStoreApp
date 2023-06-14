@@ -12,8 +12,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 LogManager.LoadConfiguration(String.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
 
-// Add services to the container.
-
 builder.Services.AddControllers(config =>
 {
     config.RespectBrowserAcceptHeader = true;
@@ -23,20 +21,17 @@ builder.Services.AddControllers(config =>
 .AddXmlDataContractSerializerFormatters()
 .AddCustomCsvFormatter()
 .AddApplicationPart(typeof(Presentation.AssemblyReference).Assembly)
-.AddNewtonsoftJson(opt => 
-opt.SerializerSettings.ReferenceLoopHandling =
-Newtonsoft.Json.ReferenceLoopHandling.Ignore);
-
-//builder.Services.AddScoped<ValidationFilterAttribute>(); // IoC
-
-
+.AddNewtonsoftJson(opt =>
+    opt.SerializerSettings.ReferenceLoopHandling =
+    Newtonsoft.Json.ReferenceLoopHandling.Ignore
+);
 
 builder.Services.Configure<ApiBehaviorOptions>(options =>
 {
     options.SuppressModelStateInvalidFilter = true;
 });
 
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.ConfigureSwagger();
 builder.Services.ConfigureSqlContext(builder.Configuration);
@@ -61,7 +56,6 @@ builder.Services.ConfigureJWT(builder.Configuration);
 builder.Services.RegisterRepositories();
 builder.Services.RegisterServices();
 
-//Register oluyor.
 var app = builder.Build();
 
 var logger = app.Services.GetRequiredService<ILoggerService>();
@@ -86,11 +80,10 @@ app.UseHttpsRedirection();
 
 app.UseIpRateLimiting();
 app.UseCors("CorsPolicy");
-// Microsoft best practice -> Cors'tan sonra Caching ifadesinin çaðrýlmasýný önerir.
 app.UseResponseCaching();
 app.UseHttpCacheHeaders();
 
-app.UseAuthentication(); //Önce Authentication, ardýndan Authorization yapýlýr.
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
