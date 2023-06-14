@@ -58,6 +58,9 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.ConfigureIdentity();
 builder.Services.ConfigureJWT(builder.Configuration);
 
+builder.Services.RegisterRepositories();
+builder.Services.RegisterServices();
+
 //Register oluyor.
 var app = builder.Build();
 
