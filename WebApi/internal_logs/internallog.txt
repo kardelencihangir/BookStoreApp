@@ -422,3 +422,21 @@
 2023-06-08 15:52:56.3651 Info Message Template Auto Format enabled
 2023-06-08 15:52:56.5934 Info Adding target FileTarget(Name=logfile)
 2023-06-08 15:52:56.6520 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\karde\OneDrive\Masaüstü\Kardelen\Courses\ASP.NET Core Web API\bsStoreApp\WebApi\nlog.config
+2023-06-14 14:03:48.3259 Info Message Template Auto Format enabled
+2023-06-14 14:03:48.6716 Info Adding target FileTarget(Name=logfile)
+2023-06-14 14:03:48.7222 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\karde\OneDrive\Masaüstü\Kardelen\Courses\ASP.NET Core Web API\bsStoreApp\WebApi\nlog.config
+2023-06-14 14:37:12.3055 Info Message Template Auto Format enabled
+2023-06-14 14:37:12.5299 Info Adding target FileTarget(Name=logfile)
+2023-06-14 14:37:12.6245 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\karde\OneDrive\Masaüstü\Kardelen\Courses\ASP.NET Core Web API\bsStoreApp\WebApi\nlog.config
+2023-06-14 14:41:00.1506 Info Message Template Auto Format enabled
+2023-06-14 14:41:00.5115 Info Adding target FileTarget(Name=logfile)
+2023-06-14 14:41:00.6032 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\karde\OneDrive\Masaüstü\Kardelen\Courses\ASP.NET Core Web API\bsStoreApp\WebApi\nlog.config
+2023-06-14 14:41:11.0797 Info Message Template Auto Format enabled
+2023-06-14 14:41:11.1856 Info Adding target FileTarget(Name=logfile)
+2023-06-14 14:41:11.2182 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\karde\OneDrive\Masaüstü\Kardelen\Courses\ASP.NET Core Web API\bsStoreApp\WebApi\nlog.config
+2023-06-14 15:23:21.4217 Info Message Template Auto Format enabled
+2023-06-14 15:23:21.5982 Info Adding target FileTarget(Name=logfile)
+2023-06-14 15:23:21.6537 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\karde\OneDrive\Masaüstü\Kardelen\Courses\ASP.NET Core Web API\bsStoreApp\WebApi\nlog.config
+2023-06-14 15:35:13.3173 Info Message Template Auto Format enabled
+2023-06-14 15:35:13.4228 Info Adding target FileTarget(Name=logfile)
+2023-06-14 15:35:13.4504 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\karde\OneDrive\Masaüstü\Kardelen\Courses\ASP.NET Core Web API\bsStoreApp\WebApi\nlog.config

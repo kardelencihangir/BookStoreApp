@@ -77,7 +77,7 @@ namespace Presentation.Controllers
             .GetAllBooksWithDetailsAsync(false));
         }
 
-        [Authorize(Roles = "Editor, Admin")]
+        [Authorize(Roles = "Editor, Admin, User")]
         [ServiceFilter(typeof(ValidationFilterAttribute))]
         [HttpPost(Name = "CreateOneBookAsync")]
         public async Task<IActionResult> CreateOneBookAsync([FromBody] BookDtoForInsertion bookDto)
